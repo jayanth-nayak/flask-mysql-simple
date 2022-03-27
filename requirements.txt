@@ -1,0 +1,4 @@
+Flask
+Flask-MySQL
+requests
+SQLAlchemy
