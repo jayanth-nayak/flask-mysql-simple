@@ -32,7 +32,6 @@ def insert_user(name, email, password):
     print(f"INSERT INTO users(name, email, password) VALUES('{name}', '{email}', '{password}');")
     execute_query(f"INSERT INTO users(name, email, password) VALUES('{name}', '{email}', '{password}');")
 
-
 @app.route('/', methods=['GET', 'POST'])
 def UsersController():
     if request.method == 'GET':
@@ -50,6 +49,4 @@ def UsersController():
         except Exception as e:
             return {"message" : "error"}
         
-
-
 app.run()
