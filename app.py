@@ -85,3 +85,4 @@ def DeleteUser(email):
     delete_user(email)
     return redirect('/')   
 app.run()
+app.run()
